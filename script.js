@@ -24,3 +24,15 @@ function profileView(){
         pCard.style.display = 'none';
     }
 }
+
+function scaleBusinessCard(){
+    const bCard=document.getElementById('business-card');   
+     console.log(window.getComputedStyle(bCard).display);
+    if(window.getComputedStyle(bCard).display=='none'){
+        bCard.style.display = 'block';
+    }
+    else{
+        console.log("else got");
+        bCard.style.display = 'none';
+    }
+}

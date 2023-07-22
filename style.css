@@ -2,6 +2,7 @@
     --primary-color:#ffffff;
     --secondary-color:#f3f2ef;
     --text-color: #000000;
+    --secondary-text-color: #1100ff;
 }
 *{
     padding: 0;
@@ -88,9 +89,21 @@ nav .left-wrapper input[type="text"]{
 }
 .prem-bus a{
     width:max-content;
+   
+}
+.for-business{
+    border-left: 1px solid gray;
+    padding-left: 5px;
 }
 .center-wrapper .nav-item .profile-wrapper{
    position: relative;
+}
+ .card-title{
+    width: max-content;
+}
+.profile-card .card-title img{
+    width: 50px;
+    height: 50px;
 }
 
 .nav-item #profile-card{
@@ -98,6 +111,49 @@ nav .left-wrapper input[type="text"]{
     right: 0;
     top: 60px;
     display: none;
+   
+}
+.profile-card .view-profile-btn{
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-text-color);
+    color: var(--secondary-text-color);
+
+}
+.profile-card .card-body-wrapper{
+line-height: 30px;
+}
+.profile-card hr{
+    width: 100%;
+}
+.profile-card a{
+    transition:1s;
+    cursor: pointer;
+}
+.profile-card a:hover,span:hover{
+    transform: scale(1.05);
+    color: var(--secondary-text-color) !important;
+}
+
+/* business-card */
+.center-wrapper .nav-item .business-wrapper{
+    position: relative;
+ }
+.nav-item #business-card{
+    position:absolute;
+    right: 0;
+    top: 20px;
+    display: none;
+}
+.nav-item #business-card .card-content{
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.nav-item #business-card .card-body .img-wrapper{
+    margin:5px;
+    padding:6px;
+    border: 2px solid var(--secondary-color);
 }
 @media only screen and (max-width: 1290px){
   header {
