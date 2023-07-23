@@ -18,6 +18,7 @@ function profileView(){
      console.log(window.getComputedStyle(pCard).display);
     if(window.getComputedStyle(pCard).display=='none'){
         pCard.style.display = 'block';
+        document.querySelector('#business-card').style.display='none';
     }
     else{
         console.log("else got");
@@ -31,6 +32,7 @@ function scaleBusinessCard(){
     if(window.getComputedStyle(bCard).display=='none'){
         bCard.style.display = 'block';
         document.querySelector('.for-business').style.opacity ='1';
+        document.querySelector('.profile-card').style.display='none';
     }
     else{
         console.log("else got");

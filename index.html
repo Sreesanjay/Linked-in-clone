@@ -223,55 +223,69 @@
       </nav>
     </header>
 
-    <section class="main mt-4" onclick="shrinkSearch()">
-      <section class="left-section">
+    <section class="row me-0 main mt-4" onclick="shrinkSearch()">
+      <section class="left-section col-lg-3 col-md-4 col-sm-12">
         <div class="card left-section-profile-card">
           <div class="upper">
             <img src="./stocks/center-banner.png" class="img-fluid">
           </div>
           <div class="user text-center d-flex justify-content-center">
             <div class="profile-img-wrapper">
-              <img src="./stocks/jdkah.jpg" class="rounded-circle" width="80">
+              <img src="./stocks/jdkah.jpg" class="rounded-circle" width="70">
             </div>
           </div>
           <div class="text-center pc-body ">
-            <h4 class="mb-0">Sreesanjay S</h4>
+            <h5 class="mb-0">Sreesanjay S</h5>
             <p class="text-muted d-block mb-2">MERN Stack Developer</p>
           </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <p class="d-flex flex-column"><span>Connections </span><span class="fw-bold">Grow your network</span></p>
-                <p>invitations</p>
+            <ul class="list-group list-group-flush left-card-text-center">
+              <li class="list-group-item p-0">
+                <div class="d-flex justify-content-between t-block p-3">
+                <a class="d-flex flex-column"><span>Connections </span><span class="fw-bold">Grow your network</span></a>
+                <p class="text-primary">2</p>
+              </div>
+              <div class="d-flex justify-content-between t-block px-3">
+                <a>invitations</a>
+                <p  class="text-primary">4</p>
+              </div>
               </li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
+              <li class="list-group-item p-3 t-block">
+                <a>Access exclusive tools & insights</a>
+                <a class="d-flex"><svg id="prem-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+                  <path
+                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
+                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                </svg>&nbsp
+                <p>
+                 Network Smarter, Try Premium Free</p>
+                </a>
+              </li>
+              <li class="list-group-item p-3 t-block">
+                <a class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                  <path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"/>
+                </svg><p class="m-0">&nbsp My Items</p></a>
+              </li>
             </ul>
-          
-  
         </div>
 
 
-        <div class="card left-section-second-card" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
+        <div class="card left-section-second-card mt-2 left-card-text-center p-3" style="width:225PX; opacity:0.9">
+            <p class="px-3 py-2 m-0">Recent</p>
+           <a class="t-block"><img src="./stocks//icons8-team-24.png" alt="">&nbsp Jobs for Devs: JavaScript,Typ...</a>
+            <a class="t-block"><img src="./stocks//icons8-team-24.png" alt="">&nbsp JavaScript Developer</a>
+            <a class="t-block"><img src="./stocks//icons8-team-24.png" alt="">&nbsp JavaScript</a>
+           <a class="t-block"><img src="./stocks//icons8-team-24.png" alt="">&nbsp React Native</a>
+
+           <p class="px-3 py-2 m-0 mt-3">Groups</p>
+        <a class="t-block"><img src="./stocks//icons8-team-24.png" alt="">&nbsp Jobs for Devs: JavaScript,Typ...</a>
+           <a class="t-block"><img src="./stocks//icons8-team-24.png" alt="">&nbsp JavaScript Developer</a>
+           <a class="t-block"><img src="./stocks//icons8-team-24.png" alt="">&nbsp JavaScript</a>         
         </div>  
       </section>
 
       <!-- center section -->
-      <section class="center-section">
+      <section class="center-section col-lg-6 col-md-8">
 
         <div class="card center-section-banner">
           <img class="card-img-top" src="./stocks/center-banner.png" alt="Card image cap">
@@ -295,22 +309,19 @@
         </div>
 
       </section>
-      <section class="right-section">
+      <section class="right-section col-lg-3">
         <div class="card">
-          <div class="card-header">
-            Featured
+          <div class="card-header" style="background-color: white;">
+            <h5>Linked In News</h5>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+          <ul>
+            <label for=""></label>
           </ul>
         </div>
 
         <img src="./stocks/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" alt="">
       </section>
     </section>
-
   </div>
 
 
