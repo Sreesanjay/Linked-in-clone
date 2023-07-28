@@ -378,7 +378,7 @@ nav .left-wrapper input[type="text"] {
 }
 
 .post-comment-section .post-comment-box {
-    width: 90%;
+    width: 80%;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     border: 1px solid #bab8b8;
@@ -464,6 +464,9 @@ footer a{
     .left-sec-expand{
         display: block;
     }
+    .post-comment-section .smile{
+        margin-left:-70px !important;
+    }
 }
 
 @media only screen and (max-width: 545px) {
@@ -518,5 +521,6 @@ footer a{
     .left-sec-expand{
         display: none !important;
     }
+    
 
 }
